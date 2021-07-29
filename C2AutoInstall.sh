@@ -1,10 +1,18 @@
 #!/bin/sh
-banner()
-{ __ _ ___ ___ _   _ _ __ ___   ___      | |__  _ __ ___  __ _  ___| |__  
+cat << "EOF"
+  __ _ ___ ___ _   _ _ __ ___   ___      | |__  _ __ ___  __ _  ___| |__  
  / _` / __/ __| | | | '_ ` _ \ / _ \_____| '_ \| '__/ _ \/ _` |/ __| '_ \ 
 | (_| \__ \__ \ |_| | | | | | |  __/_____| |_) | | |  __/ (_| | (__| | | |
  \__,_|___/___/\__,_|_| |_| |_|\___|     |_.__/|_|  \___|\__,_|\___|_| |_|
-}
+
+                     **C2 Automation Script**
+
+                       Use At Your Own Risk
+
+                   Don't Use This For Stupid Shit
+                         
+EOF
+
 apt-get update -y && apt-get upgrade -y
 
 apt install python3.7 python3.7-dev python3-pip
