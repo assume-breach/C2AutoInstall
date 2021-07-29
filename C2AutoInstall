@@ -32,5 +32,10 @@ mkdir /opt/merlin
 cd /opt/merlin
 wget https://github.com/Ne0nd0g/merlin/releases/download/v0.8.0/merlinServer-Linux-x64-v0.8.0.BETA.7z
 7z x merlinServer-Linux-x64-v0.8.0.BETA.7z
+cd /opt
+apt install curl -y
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+chmod +x msfinstall
+./msfinstall
 apt-get update -y && apt-get upgrade -y
 reboot now
