@@ -1,5 +1,17 @@
 #!/bin/sh
 apt-get update -y && apt-get upgrade -y
+apt install hydra -y
+apt install dirb -y
+apt install nmap -y
+sudo add-apt-repository ppa:giuspen/ppa
+sudo apt-get update
+sudo apt-get install cherrytree
+cd /opt
+https://github.com/praetorian-inc/Hob0Rules.git
+git clone https://github.com/danielmiessler/SecLists.git
+git clone https://github.com/trustedsec/social-engineer-toolkit.git
+cd social-engineer-toolkit/
+python3 setup.py
 cd /opt
 git clone --recurse-submodules https://github.com/cobbr/Covenant
 dotnet build
