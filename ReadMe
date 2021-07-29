@@ -2,6 +2,10 @@ This is a script to install Metasploit, Covenant, SilentTrinity, Empire, StarKil
 
 Usage:
 
-git clone https://github.com/assume-breach/C2AutoInstall.git | bash
+git clone https://github.com/assume-breach/C2AutoInstall.git 
+
+cd /opt/C2AutoInstall
+
+./C2.sh
 
 Wait for the server to reboot and then initiate your C2.
