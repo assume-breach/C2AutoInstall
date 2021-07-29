@@ -17,8 +17,7 @@ apt install python3.7 python3.7-dev python3-pip
 sudo -H pip3 install -U pipenv
 cd /opt/SILENTTRINITY/  
 pip3 install -r requirements.txt
-pipenv install && pipenv shell
-exit 
+pipenv install 
 cd /opt
 sudo git clone https://github.com/BC-SECURITY/Empire.git
 cd Empire
