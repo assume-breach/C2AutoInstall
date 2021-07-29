@@ -1,0 +1,7 @@
+This is a script to install Metasploit, Covenant, SilentTrinity, Empire, StarKiller, and Merlin onto a C2 server. 
+
+Usage:
+
+git clone https://github.com/assume-breach/C2AutoInstall.git | bash
+
+Wait for the server to reboot and then initiate your C2.
