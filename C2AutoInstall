@@ -12,11 +12,10 @@ rm ./Data/public.pem
 rm ./Data/private.pem
 cd /opt
 git clone https://github.com/byt3bl33d3r/SILENTTRINITY
-apt update && apt upgrade  
+apt update -y && apt upgrade -y  
 apt install python3.7 python3.7-dev python3-pip
 sudo -H pip3 install -U pipenv
-cd /opt
-cd SILENTTRINITY  
+cd /opt/SILENTTRINITY/  
 pip3 install -r requirements.txt
 pipenv install && pipenv shell
 exit 
@@ -29,7 +28,7 @@ sudo wget https://github.com/BC-SECURITY/Starkiller/releases/download/v1.8.0/sta
 sudo chmod +x starkiller-1.0.0.AppImage
 cd /opt
 curl -sSL https://raw.githubusercontent.com/nettitude/PoshC2/master/Install.sh | bash
-apt install golang
+apt install golang -y
 mkdir /opt/merlin
 cd /opt/merlin
 wget https://github.com/Ne0nd0g/merlin/releases/download/v0.8.0/merlinServer-Linux-x64-v0.8.0.BETA.7z
